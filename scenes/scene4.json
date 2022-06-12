@@ -1,0 +1,134 @@
+{
+    "camera": {
+        "type": "perspective",
+        "position": [0,1,-2],
+        "lookat": [0,0.5,0],
+        "up": [0,1,0],
+        "fov": 80
+    },
+    "lights": {
+        "ambient": [0.7, 0.7, 0.7],
+        "point_lights": [
+            {
+                "position": [-2, 6, 6],
+                "Id": [0.5, 0.5, 0.8],
+                "Is": [1, 1, 1],
+                "k": 0.0001
+            },
+            {
+                "position": [3, 0.5, 6],
+                "Id": [0.5, 0.4, 0.15],
+                "Is": [1, 1, 1],
+                "k": 0.0001
+            }
+        ],
+        "directional_lights": [
+            {
+                "direction": [-2, -2, 0],
+                "Id": [0.3, 0.3, 0.3],
+                "Is": [1, 1, 1]
+            }
+        ]
+    },
+    "root": {
+        "name": "node0",
+        "type": "node",
+        "translation": [0,0,0],
+        "rotation": [0,0,0],
+        "scale": [1,1,1],
+        "children": [
+            {
+                "name": "plane",
+                "type": "object",
+                "obj": "../objects/plane_vt.obj",
+                "texture": "../objects/stone_path.jpg",
+                "normal": "./objects/stone_path_norm.jpg",
+                "color": "#022851",
+                "translation": [0,-2,0],
+                "rotation": [0,0,0],
+                "scale": [25,25,25],
+                "children": []
+            },
+            {
+                "name": "cube",
+                "type": "object",
+                "obj": "../objects/cube_vt2.obj",
+                "color": "#74cf8c",
+                "texture": "../objects/uc_davis_logo.png",
+                "normal": "./objects/normal2.jpg",
+                "translation": [0,0,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+                
+            },
+            {
+                "name": "sphere",
+                "type": "object",
+                "obj": "../objects/sphere.obj",
+                "color": "#74cf8c",
+                "texture": "../objects/water_melon.jpg",
+                "normal": "./objects/normal.jpg", 
+                "translation": [3,0,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+                
+            },
+            {
+                "name": "cylinder",
+                "type": "object",
+                "obj": "../objects/cylinder_vt.obj",
+                "color": "#74cf8c",
+                "texture": "../objects/wood_fence.jpg",
+                "normal": "./objects/wood_fence_norm.jpg", 
+                "translation": [-3,0,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+                
+            },
+            {
+                "name": "wall",
+                "type": "object",
+                "obj": "../objects/wall.obj",
+                "color": "#74cf8c",
+                "texture": "../objects/brick_wall.jpg",
+                "normal": "./objects/normal2.jpg", 
+                "translation": [0,0,3],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+                
+            },
+            {
+                "name": "egg",
+                "type": "object",
+                "obj": "../objects/egg.obj",
+                "color": "#74cf8c",
+                "texture": "../objects/water_melon.jpg",
+                "normal": "./objects/normal.jpg", 
+                "translation": [0,0,-3],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "children": []
+                
+            },
+            {
+                "name": "bear",
+                "type": "object",
+                "obj": "../objects/beartholomew_object.obj",
+                "color": "#74cf8c",
+                "texture": "../objects/beartholomew_object.jpg",
+                "normal": "./objects/normal2.jpg", 
+                "translation": [0,1.75,-1.5],
+                "rotation": [-90,180,0],
+                "scale": [1,1,1],
+                "children": []
+                
+            }
+            
+            
+        ]
+    }
+}
